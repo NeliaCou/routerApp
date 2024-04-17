@@ -1,0 +1,14 @@
+a {
+  padding: 5em;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
