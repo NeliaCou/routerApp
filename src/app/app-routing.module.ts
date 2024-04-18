@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
+import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
 
 const routes: Routes = [
   {path: '', 
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {path: 'directive', 
   component: DirectiveComponent
+  },
+  {path: 'cocktail', 
+  component: CocktailListComponent
   },
   {path: '**', 
   component: ErrorComponent

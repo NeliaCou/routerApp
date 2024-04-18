@@ -1,0 +1,7 @@
+<button (click)="onClick()" type="button">Mes cocktails</button>
+
+<div *ngFor="let cocktail of cocktails">
+    <h3>{{ cocktail.name }}</h3>
+    <p>Prix: {{ cocktail.price | currency:'EUR'}}</p>
+    <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+  </div>

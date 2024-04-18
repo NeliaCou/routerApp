@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-colorList = ["blue", "green", "yellow", "pink", "purple"]
+colorList = ["blue", "green", "yellow", "pink", "purple"];
 }
