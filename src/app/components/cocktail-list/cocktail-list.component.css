@@ -1,0 +1,47 @@
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 18rem;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  border-radius: 10px;
+  width: 12rem;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  border-radius: 20%;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

@@ -12,12 +12,12 @@ export class CocktailService {
     {
       name: "blue", 
       price: 12,
-      image: "https://cdn2.thecatapi.com/images/3it.jpg"
+      image: "https://www.thecocktaildb.com/images/media/drink/xxyywq1454511117.jpg"
     },
     {
       name: "green", 
       price: 24,
-      image: "https://cdn2.thecatapi.com/images/3it.jpg"
+      image: "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg"
     }
   ]; 
 
