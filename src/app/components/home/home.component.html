@@ -1,3 +1,7 @@
-<p>home works!</p>
-<app-button-child *ngFor="let color of colorList" [colorChild]="color">
+<p>Color button parent!</p>
+<app-button-child *ngFor="let color of colorList" [colorChild]="color" (clickTextChange)="changeText($event)">
 </app-button-child>
+
+<p>{{colorClicked}} a été cliqué</p>
+
+<p *ngIf="newColorList.length >= colorList.length">Tous les boutons ont été cliqués</p>

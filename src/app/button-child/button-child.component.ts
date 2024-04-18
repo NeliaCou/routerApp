@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-child',
@@ -6,6 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button-child.component.css'
 })
 export class ButtonChildComponent {
-@Input() colorChild: string="";
+
+  @Input() colorChild: string="";
+  @Output() clickTextChange: EventEmitter<string> = new EventEmitter<string>();
+
+  isDisabled: boolean = false;
+
+  sendToParent(): void {
+    this.clickTextChange.emit(this.colorChild);
+    this.isDisabled = !this.isDisabled;
+};
+
 
 }

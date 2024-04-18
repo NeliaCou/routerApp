@@ -1,1 +1,5 @@
-<button [ngStyle]="{'background-color' : colorChild}" type="button">test</button>
+<button [ngStyle]="{'background-color' : colorChild}" (click)="sendToParent()" type="button">
+    <span>
+    {{ isDisabled ? colorChild: "bloup"}}
+    </span>
+</button>

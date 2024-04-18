@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-colorList = ["blue", "green", "yellow", "pink", "purple"];
+colorList: string[] = ["blue", "green", "yellow", "pink", "purple"];
+newColorList: string[] = [];
+
+colorClicked: string = "";
+
+changeText(event: string) : void{
+this.colorClicked = event;
+this.newColorList.push(event);
+}
 }
