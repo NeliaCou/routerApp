@@ -9,13 +9,17 @@ import { Cocktail } from '../../models/cocktail.model';
 })
 export class CocktailListComponent {
 
-  private CocktailService = inject(CocktailService);
-
   cocktails!: Cocktail[];
 
-  onClick() {
-    console.log(this.CocktailService.getCocktails());
+  private cocktailService = inject(CocktailService);
 
-this.cocktails = this.CocktailService.getCocktails();
+
+  onClick(): void {
+    this.cocktailService.getCocktails().subscribe(cocktailsFromJsonFile => {
+      this.cocktails = cocktailsFromJsonFile;
+
+    console.log(this.cocktails);
+    
+    })
   }
 }

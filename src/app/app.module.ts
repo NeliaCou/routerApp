@@ -11,6 +11,7 @@ import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ButtonChildComponent } from './button-child/button-child.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,11 @@ import { CocktailListComponent } from './components/cocktail-list/cocktail-list.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
