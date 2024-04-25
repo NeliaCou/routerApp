@@ -9,9 +9,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
-import { ButtonChildComponent } from './button-child/button-child.component';
+import { ButtonChildComponent } from './components/button-child/button-child.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
 import { provideHttpClient } from '@angular/common/http';
+import { CocktailDetailsComponent } from './components/cocktail-details/cocktail-details.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { provideHttpClient } from '@angular/common/http';
     DirectiveComponent,
     ErrorComponent,
     ButtonChildComponent,
-    CocktailListComponent
+    CocktailListComponent,
+    CocktailDetailsComponent
   ],
   imports: [
     BrowserModule,

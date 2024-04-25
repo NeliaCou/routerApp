@@ -2,9 +2,11 @@
 <section>
 <div *ngFor="let cocktail of cocktails" class="card">
   <div class="container">
-    <h3>{{ cocktail.name }}</h3>
+    <h3>L'id : {{cocktail.id}}</h3>
+    <p>{{ cocktail.name }}</p>
     <p>Prix: {{ cocktail.price | currency:'EUR'}}</p>
-    <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+    <p>Quantité disponible : {{ cocktail.quantity}}</p>
+    <img [src]="cocktail.image" alt="{{ cocktail.name }}" [routerLink]="['cocktail/', cocktail.id]" >
   </div>
 </div>
 </section>

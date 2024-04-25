@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
+import { CocktailDetailsComponent } from './components/cocktail-details/cocktail-details.component';
 
 const routes: Routes = [
   {path: '', 
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {path: 'cocktail', 
   component: CocktailListComponent
+  },
+  {path: 'cocktail/cocktail/:id',
+    component: CocktailDetailsComponent
   },
   {path: '**', 
   component: ErrorComponent
