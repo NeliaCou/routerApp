@@ -11,8 +11,9 @@ import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ButtonChildComponent } from './components/button-child/button-child.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { CocktailDetailsComponent } from './components/cocktail-details/cocktail-details.component';
+import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 
 
 @NgModule({
@@ -26,11 +27,13 @@ import { CocktailDetailsComponent } from './components/cocktail-details/cocktail
     ErrorComponent,
     ButtonChildComponent,
     CocktailListComponent,
-    CocktailDetailsComponent
+    CocktailDetailsComponent,
+    PokemonDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideHttpClient()

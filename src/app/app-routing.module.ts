@@ -8,6 +8,7 @@ import { DirectiveComponent } from './components/directive/directive.component';
 import { ErrorComponent } from './components/error/error.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
 import { CocktailDetailsComponent } from './components/cocktail-details/cocktail-details.component';
+import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 
 const routes: Routes = [
   {path: '', 
@@ -33,6 +34,9 @@ const routes: Routes = [
   },
   {path: 'cocktail/cocktail/:id',
     component: CocktailDetailsComponent
+  },
+  {path: 'pokemon',
+  component: PokemonDetailsComponent
   },
   {path: '**', 
   component: ErrorComponent
